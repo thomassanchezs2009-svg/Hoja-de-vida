@@ -1,0 +1,393 @@
+/* ============================================
+   RESETEO GENERAL
+============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f6fa;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+/* ============================================
+   CONTENEDOR PRINCIPAL
+============================================ */
+
+.contenedor {
+  width: 100%;
+  max-width: 720px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+
+/* ============================================
+   HEADER
+============================================ */
+
+header {
+  background: linear-gradient(135deg, #4b3cc4, #704de2);
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0 5px 15px rgba(76, 61, 180, 0.2);
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+
+/* ============================================
+   FORMULARIOS
+============================================ */
+
+.formulario,
+.formu {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.formulario h2,
+.formu h2 {
+  text-align: center;
+  color: #4b3cc4;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+
+/* ============================================
+   GRUPOS
+============================================ */
+
+.grupo,
+.nivel,
+.institucion,
+.titulo,
+.ano,
+.cursos {
+  margin-bottom: 18px;
+}
+
+.grupo label,
+.nivel label,
+.institucion label,
+.titulo label,
+.ano label,
+.cursos label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+
+/* ============================================
+   INPUTS Y SELECTS
+============================================ */
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #dfe1ea;
+  border-radius: 8px;
+  background: #fafbff;
+  color: #333;
+  font-size: 0.95rem;
+  transition: 0.25s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #5b4bd8;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(91, 75, 216, 0.12);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+
+/* ============================================
+   CURSOS
+============================================ */
+
+.curso-agregar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.curso-agregar input {
+  flex: 1;
+}
+
+.curso-agregar button {
+  white-space: nowrap;
+}
+
+.lista-cursos {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.curso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f4ff;
+  border-left: 4px solid #5b4bd8;
+  padding: 10px 12px;
+  border-radius: 7px;
+}
+
+.curso span {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.curso button {
+  padding: 6px 12px;
+  background: #ef4444;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.curso button:hover {
+  background: #dc2626;
+}
+
+
+/* ============================================
+   BOTONES
+============================================ */
+
+button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+
+/* Botón principal */
+
+button[type="submit"] {
+  background: linear-gradient(135deg, #5146d8, #704de2);
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(81, 70, 216, 0.25);
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #4438c2, #6040cf);
+}
+
+
+/* Botones secundarios */
+
+button[type="button"] {
+  background: #e9e7ff;
+  color: #4b3cc4;
+}
+
+button[type="button"]:hover {
+  background: #dcd9ff;
+}
+
+
+/* ============================================
+   BOTONES ATRÁS / CONTINUAR
+============================================ */
+
+.botones {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.botones button {
+  flex: 1;
+}
+
+.botones button[type="submit"] {
+  margin-top: 0;
+}
+
+
+/* ============================================
+   VISTA PREVIA
+============================================ */
+
+.vista-previa {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+}
+
+
+/* Tarjeta principal */
+
+.vista-previa .tarjeta {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #5b4bd8;
+}
+
+
+/* Títulos de las secciones */
+
+.vista-previa h2 {
+  color: #4b3cc4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vista-previa h3 {
+  color: #4b3cc4;
+  font-size: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+
+/* ============================================
+   DATOS DE LA VISTA PREVIA
+============================================ */
+
+.dato {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.88rem;
+}
+
+.dato:last-child {
+  border-bottom: none;
+}
+
+.dato strong {
+  color: #555;
+}
+
+.dato span {
+  color: #333;
+  font-weight: 500;
+}
+
+
+/* ============================================
+   FOTO / PERFIL
+============================================ */
+
+.foto-perfil {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5b4bd8;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+
+/* ============================================
+   FOOTER
+============================================ */
+
+footer {
+  background: #29245a;
+  color: #eee;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 0.85rem;
+}
+
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 600px) {
+
+  .contenedor {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .formulario,
+  .formu {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  .formulario h2,
+  .formu h2 {
+    font-size: 1.2rem;
+  }
+
+  .curso-agregar {
+    flex-direction: column;
+  }
+
+  .curso-agregar input,
+  .curso-agregar button {
+    width: 100%;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .botones button {
+    width: 100%;
+  }
+
+  .dato {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
